@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Example of HTML Attributes</title>
+	</head>
+	<body>
+		<script>
+		function add()
+		{
+			var a,b,c;
+			a=document.getElementById("t1").value;
+			b=document.getElementById("t2").value;
+			c=a+b;
+			document.getElementById("t3").value= c;
+		}
+		function sum()
+		{
+			var a,b,c;
+			a=document.getElementById("t1").value;
+			b=document.getElementById("t2").value;
+			c=a+"+"+b;
+			document.getElementById("t3").value= eval(c);
+		}
+	
+		</script>
+		<input type="text" name="t1" id="t1" title="Number1"><br><br>
+		<input type="text" name="t2" id="t2" title="Number2"><br><br>
+		<input type="button" name="b1" id="b1" value="Concat" title="Concat"  onclick="add()"<br><br><br>
+		<input type="button" name="b2" id="b2" value="Add" title="Add" onclick="sum()"<br><br><br>
+		<input type="text" name="t3" id="t3" title="Result" disabled>
+	</body>
+</html>
